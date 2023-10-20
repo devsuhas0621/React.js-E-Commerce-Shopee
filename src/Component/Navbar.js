@@ -59,7 +59,7 @@ function Navbar({
             <nav className="navbar">
                 <div className="logo">
                     <img width="40" height="40" src="https://img.icons8.com/3d-fluency/94/shopaholic.png" alt="shopaholic" />
-                    <Link to="/"><h1 className="logo-title">SHOPEE</h1></Link>
+                    <Link to="/"><h1 className="logo-title">SHOPE-E</h1></Link>
                 </div>
                 <div className="search">
                     <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" className='searchicn' />
