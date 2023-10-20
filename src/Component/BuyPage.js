@@ -51,7 +51,7 @@ const continueShopping2=()=>{
           <div className="thank-box">
 
             <h1 className="ty">Thank you!</h1>
-            {/* <p>YOUR ORDER SUBMITTED SUCCESSFULLY</p> */}
+            
 
             <button className='cont-shop' onClick={continueShopping2}>Continue Shopping</button>
           </div>

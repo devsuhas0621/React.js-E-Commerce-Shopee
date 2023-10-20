@@ -8,7 +8,7 @@ import Megamenu from './Component/Megamenu';
 import Men from './Component/Men';
 import Navbar from './Component/Navbar';
 import mendata from './DB/database';
-import BuyPage from './Component/BuyPage'; // Correct the import path
+import BuyPage from './Component/BuyPage';  
 import Log from './Component/Log'
 import Order from './Component/Order';
 function App() {
@@ -145,9 +145,9 @@ function App() {
 
   };
   const clearCart = () => { 
-    setCart([]); // Clear the entire cart
-    setSelectedProducts([]); // Clear selected products
-    setItemCounts({}); // Clear item counts
+    setCart([]);  
+    setSelectedProducts([]);  
+    setItemCounts({});  
 
   };
   const hideCart = () => {
