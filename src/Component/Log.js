@@ -30,10 +30,12 @@ function Log({ logvisible, setLoggedIn}) {
     }, [setLoggedIn]);
     const showNotification = (message, type) => {
         setNotification(message);
-        setNotificationType(type); 
+        setNotificationType(type);
+
+        // Set a timeout to hide the notification after 2 seconds
         setTimeout(() => {
             setNotification(null);
-            setNotificationType('success');  
+            setNotificationType('success'); // Reset type to default after hiding
         }, 3000);
     };
 
@@ -41,7 +43,7 @@ function Log({ logvisible, setLoggedIn}) {
         e.preventDefault();
     
         if (activeTab === "signup") {
-           
+            // Handle signup
             createUserWithEmailAndPassword(auth, value.email, value.password)
                 .then((userCredential) => {
                     const user = userCredential.user;
@@ -60,7 +62,7 @@ function Log({ logvisible, setLoggedIn}) {
                     setNotificationType('error');
                 });
         } else {
-            
+            // Handle login
             signInWithEmailAndPassword(auth, logvalue.email, logvalue.password)
                 .then((userCredential) => {
                     const user = userCredential.user;
