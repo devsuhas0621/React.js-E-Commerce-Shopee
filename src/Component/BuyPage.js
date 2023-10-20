@@ -1,19 +1,31 @@
-import { useNavigate } from 'react-router-dom'; 
+// BuyPage.js
+import { useNavigate } from 'react-router-dom';
+   
+
+
 function BuyPage({
   selectedProducts,
   calculateTotalAmount,
   incrementCount,
   decrementCount,
   itemCounts,
-  isDataConfirmed, 
-  check, 
-  conf, 
+  isDataConfirmed,
+  setIsDataConfirmed,
+  check,
+  setcheck,
+  conf,
+  setconf,
   paymentMade,
   setPaymentMade,
-  value, 
-  confirmedData, 
+  value,
+  setvalue,
+  confirmedData,
+  setConfirmedData,
   paymentData,
-  setPaymentData,  
+  setPaymentData,
+  currentStage,
+  setCurrentStage,
+  updateStage,
   editDet,
   makePayment,
   protopayment,
@@ -36,8 +48,11 @@ const continueShopping2=()=>{
     return (
       <div>
          <div className='continue-shopping'>
-          <div className="thank-box"> 
-            <h1 className="ty">Thank you!</h1> 
+          <div className="thank-box">
+
+            <h1 className="ty">Thank you!</h1>
+            {/* <p>YOUR ORDER SUBMITTED SUCCESSFULLY</p> */}
+
             <button className='cont-shop' onClick={continueShopping2}>Continue Shopping</button>
           </div>
         </div>
@@ -109,7 +124,11 @@ const continueShopping2=()=>{
                 </form>
               </div>
             </div>
-          </div>  
+          </div>
+
+          <div className="paymentmethpd">
+
+          </div>
         </div>
         <div className={`confirm ${isDataConfirmed ? ' ' : 'hidden'} ${conf ? 'hidden' : ""}`}>
           <h3 className=" shop-text"><span className='numcount'>2</span>Confirmed Details</h3>
