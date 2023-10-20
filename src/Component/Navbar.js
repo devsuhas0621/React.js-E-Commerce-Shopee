@@ -16,9 +16,7 @@ function Navbar({
     itemCounts,
     hideCart,
     isLoggedIn,
-    setLoggedIn,
-
-
+    setLoggedIn, 
 }) {
     const [notification, setNotification] = useState(null);
     const [notificationType, setNotificationType] = useState('success');
@@ -30,24 +28,20 @@ function Navbar({
                 .then(() => {
 
                     localStorage.removeItem('isLoggedIn');
-                    setLoggedIn(false);
-                    // Additional sign-out logic if needed...
+                    setLoggedIn(false); 
 
                 })
                 .catch((error) => {
-                    console.error('Sign out error:', error);
-                    // Handle sign out error if necessary
+                    console.error('Sign out error:', error); 
                 });
         }
     };
     const showNotification = (message, type) => {
         setNotification(message);
-        setNotificationType(type);
-
-        // Set a timeout to hide the notification after 2 seconds
+        setNotificationType(type); 
         setTimeout(() => {
             setNotification(null);
-            setNotificationType('success'); // Reset type to default after hiding
+            setNotificationType('success');  
         }, 2000);
     };
     const showalert = () => {
@@ -71,10 +65,7 @@ function Navbar({
                     <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" className='searchicn' />
                     <input type="search" placeholder='search for products, Brand and more' />
                 </div>
-                <div className="function function2">
-                    {/* <div className="login func">
-                        <span className='log-sign'>Login<i className="fa-solid fa-chevron-down down"></i></span>
-                    </div> */}
+                <div className="function function2"> 
                     <div className="cart func" onClick={toggleCart}>
                         <span className="material-symbols-outlined">shopping_cart</span>
                         <p>Cart</p>

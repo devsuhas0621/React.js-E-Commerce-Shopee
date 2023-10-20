@@ -8,10 +8,8 @@ import Megamenu from './Component/Megamenu';
 import Men from './Component/Men';
 import Navbar from './Component/Navbar';
 import mendata from './DB/database';
-import BuyPage from './Component/BuyPage'; // Correct the import path
-import Log from './Component/Log'
-import Success from './Component/Success';
-import Cancle from './Component/Cancle';
+import BuyPage from './Component/BuyPage'; 
+import Log from './Component/Log' 
 import Order from './Component/Order';
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false)
@@ -22,7 +20,6 @@ function App() {
   const [cartVisible, setCartVisible] = useState(false);
   const [logvisible, setlogvisibe] = useState(false);
   const [itemCounts, setItemCounts] = useState({});
-  const [removedItems, setRemovedItems] = useState([]);
   const [carticon, setcarticon] = useState('shopping_cart')
   /* buy-page.js */
   const [isDataConfirmed, setIsDataConfirmed] = useState(false);
@@ -275,7 +272,7 @@ function App() {
   /* Order.js */
 
 
-console.log(isLoggedIn)
+console.log(isLoggedIn) 
   return (
     <Router>
 
@@ -314,8 +311,7 @@ console.log(isLoggedIn)
       <Routes>
         <Route
           path="/"
-          element={<Home filterbtn2={filterbtn2} isLoggedIn={isLoggedIn}
-            setLoggedIn={setLoggedIn} />}
+          element={<Home filterbtn2={filterbtn2} />}
         />
         <Route
           path="/men"
@@ -331,24 +327,17 @@ console.log(isLoggedIn)
             incrementCount={incrementCount}
             decrementCount={decrementCount}
             isLoggedIn={isLoggedIn}
-            setLoggedIn={setLoggedIn}
-            isDataConfirmed={isDataConfirmed}
+            setLoggedIn={setLoggedIn} 
             setIsDataConfirmed={setIsDataConfirmed}
-            check={check}
-            setcheck={setcheck}
-            conf={conf}
-            setconf={setconf}
+            check={check} 
+            conf={conf} 
             paymentMade={paymentMade}
             setPaymentMade={setPaymentMade}
-            value={value}
-            setvalue={setvalue}
+            value={value} 
             confirmedData={confirmedData}
             setConfirmedData={setConfirmedData}
             paymentData={paymentData}
-            setPaymentData={setPaymentData}
-            currentStage={currentStage}
-            setCurrentStage={setCurrentStage}
-            updateStage={updateStage}
+            setPaymentData={setPaymentData} 
             editDet={editDet}
             makeTrue={makeTrue}
             makePayment={makePayment}
@@ -373,8 +362,7 @@ console.log(isLoggedIn)
           }
         />
         <Route path='/order' element={<Order setCart={setCart} order={order} removeItemFromOrder={removeItemFromOrder} />} />
-        <Route path='/sucess' element={<Success />} />
-        <Route path='/cancle' element={<Cancle />} />
+     
       </Routes>
       <Footer />
     </Router>

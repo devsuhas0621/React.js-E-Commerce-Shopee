@@ -13,16 +13,14 @@ function Megamenu({ filterbtn, cart,
     itemCounts,
     hideCart,
     isLoggedIn,
-    setLoggedIn,
-    setcarticon,
+    setLoggedIn, 
     carticon
 }) {
 
     const [megabar, setmegabar] = useState('list')
     const navigate = useNavigate();
 
-    const handleCategoryClick = (category) => {
-        // Update the state or perform other actions as needed
+    const handleCategoryClick = (category) => { 
         filterbtn(category);
 
 
@@ -39,13 +37,10 @@ function Megamenu({ filterbtn, cart,
                 .then(() => {
 
                     localStorage.removeItem('isLoggedIn');
-                    setLoggedIn(false);
-                    // Additional sign-out logic if needed...
-
+                    setLoggedIn(false); 
                 })
                 .catch((error) => {
-                    console.error('Sign out error:', error);
-                    // Handle sign out error if necessary
+                    console.error('Sign out error:', error); 
                 });
         }
     };
@@ -69,10 +64,7 @@ function Megamenu({ filterbtn, cart,
                             <p>Menu</p>
                         </div>
                     </div>
-                    <div className="function functionmega">
-                        {/* <div className="login func">
-                        <span className='log-sign'>Login<i className="fa-solid fa-chevron-down down"></i></span>
-                    </div> */}
+                    <div className="function functionmega"> 
                         <div className="cart func" onClick={toggleCart}>
                             <span className="material-symbols-outlined">{carticon}</span>
                             <p>Cart</p>
@@ -600,10 +592,4 @@ function Megamenu({ filterbtn, cart,
     )
 }
 
-export default Megamenu
-
-
-// {/* <p className="menu-item" >   </p> */ }
-
-
-
+export default Megamenu 

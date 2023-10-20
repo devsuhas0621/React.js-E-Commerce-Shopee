@@ -12,15 +12,12 @@ import fourthpost from '../img/4.png';
 import { useNavigate } from 'react-router-dom';
 
 
-function Home({ filterbtn2, isLoggedIn,setLoggedIn }) {
+function Home({ filterbtn2}) {
     const onAutoplayTimeLeft = (s, time, progress) => {};
     const navigate = useNavigate();
 
-    const handleCategoryClick = (category) => {
-        // Update the state or perform other actions as needed
-        filterbtn2(category);
-
-        // Navigate to '/men'
+    const handleCategoryClick = (category) => { 
+        filterbtn2(category); 
         navigate('/men');
     };
     return (

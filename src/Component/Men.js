@@ -29,12 +29,10 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
     };
     const showNotification = (message, type) => {
         setNotification(message);
-        setNotificationType(type);
-
-        // Set a timeout to hide the notification after 2 seconds
+        setNotificationType(type); 
         setTimeout(() => {
             setNotification(null);
-            setNotificationType('success'); // Reset type to default after hiding
+            setNotificationType('success'); 
         }, 3000);
     };
     const addToCart = (curElem) => {
@@ -96,9 +94,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                                 'LOFERS',
                                 ' BOOTS',
                                 ' RUNNING',
-                                ' SNEAKERS',
-
-                                // Add more subcategories as needed
+                                ' SNEAKERS', 
                             ])
                         }>FOOTWEAR</button>
                     <button className={`filterbtn ${activeFilter === 'Men-topwear' ? 'active' : ''}`}
@@ -106,8 +102,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                             handleCategoryClick('Men-topwear', [
                                 'TShirt',
                                 'formal',
-                                'casual',
-                                // Add more subcategories as needed
+                                'casual', 
                             ])
                         }>TOPWEAR</button>
                     <button className={`filterbtn ${activeFilter === 'Men-bottomwear' ? 'active' : ''}`}
@@ -119,8 +114,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                                 'track-pants',
                                 'shorts',
                                 'cargoes',
-                                ' three-fourth ',
-                                // Add more subcategories as needed
+                                ' three-fourth ', 
                             ])
                         }>BOTTOMWEAR</button>
                     <button className={`filterbtn ${activeFilter === 'Men-winterwear' ? 'active' : ''}`}
@@ -128,8 +122,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                             handleCategoryClick('Men-winterwear', [
                                 'sweaters ',
                                 'jackets',
-                                'tracksuits',
-                                // Add more subcategories as needed
+                                'tracksuits', 
                             ])
                         }>WINTERWEAR</button>
                     <button className={`filterbtn ${activeFilter === 'Men-ethenicwear' ? 'active' : ''}`}
@@ -142,8 +135,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                                 'sherwanis',
                                 'ethnic payjamas',
                                 'dhoti',
-                                'lungi',
-                                // Add more subcategories as needed
+                                'lungi', 
                             ])
                         }>ETHIENICWEAR</button>
                     <button className={`filterbtn ${activeFilter === 'Innerwear' ? 'active' : ''}`}
@@ -153,8 +145,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                                 'vests',
                                 'boxers',
                                 'payjamas',
-                                'night suits',
-                                // Add more subcategories as needed
+                                'night suits', 
                             ])
                         }>INNERWEAR</button>
                     <button className={`filterbtn ${activeFilter === 'watch ' ? 'active' : ''}`}
@@ -164,8 +155,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                                 'casio',
                                 'titan',
                                 'Fossil',
-                                ' Armani Exchange',
-                                // Add more subcategories as needed
+                                ' Armani Exchange', 
                             ])
                         }>WATCHES</button>
                     <button className={`filterbtn ${activeFilter === 'accessroies' ? 'active' : ''}`}
@@ -176,8 +166,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                                 'belt',
                                 'sunglasses',
                                 ' lunggage & travel',
-                                'jewellery',
-                                // Add more subcategories as needed
+                                'jewellery', 
                             ])
                         }>ACCESSORIES</button>
                     <button className={`filterbtn ${activeFilter === 'Men-Grooming ' ? 'active' : ''}`}
@@ -186,8 +175,7 @@ function Men({ menudata, filterbtn, filterbtn2, addToCart: addToCartProp }) {
                                 'deodorants',
                                 'Perfume',
                                 ' beard care ',
-                                ' shaving&aftershave',
-                                // Add more subcategories as needed
+                                ' shaving&aftershave', 
                             ])
                         }> Men-Grooming</button>
                 </div>

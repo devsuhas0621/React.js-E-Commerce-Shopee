@@ -303,8 +303,7 @@
         }
 
         .menu-title {
-            border-bottom: 1px solid rgb(227, 227, 227);
-            /* padding: 15px 0; */
+            border-bottom: 1px solid rgb(227, 227, 227); 
             font-size: 13px;
             text-transform: uppercase;
             border-radius: 100%;
@@ -318,8 +317,7 @@
             display: block;
         }
 
-        .menu-item:hover {
-            /* text-decoration: underline 2px solid #2196f3; */
+        .menu-item:hover { 
             border-left: 2px solid #2196f3;
             padding-left: 4px;
             color: #2196f3;
@@ -645,14 +643,17 @@
         .address h3 {
             font-size: 16px;
         }
-        .finalprice{
+
+        .finalprice {
             padding: 5px 10px;
         }
-        .confirm{
+
+        .confirm {
             width: 80%;
             height: 60%;
         }
-        .fincal-checout{
+
+        .fincal-checout {
             width: 90%;
             padding: 0;
         }

@@ -1,10 +1,9 @@
 import React from 'react'
 import { useState , useEffect} from 'react'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './Firebase'; // Import your Firebase auth instance
-// import { ref, set } from 'firebase/database';
+import { auth } from './Firebase';   
 import { useNavigate } from 'react-router-dom';
-function Log({ logvisible, setLoggedIn , isLoggedIn }) {
+function Log({ logvisible, setLoggedIn}) {
     const [notification, setNotification] = useState(null);
     const [notificationType, setNotificationType] = useState('success');
     const [activeTab, setActiveTab] = useState('login');
@@ -31,12 +30,10 @@ function Log({ logvisible, setLoggedIn , isLoggedIn }) {
     }, [setLoggedIn]);
     const showNotification = (message, type) => {
         setNotification(message);
-        setNotificationType(type);
-
-        // Set a timeout to hide the notification after 2 seconds
+        setNotificationType(type); 
         setTimeout(() => {
             setNotification(null);
-            setNotificationType('success'); // Reset type to default after hiding
+            setNotificationType('success');  
         }, 3000);
     };
 
@@ -44,7 +41,7 @@ function Log({ logvisible, setLoggedIn , isLoggedIn }) {
         e.preventDefault();
     
         if (activeTab === "signup") {
-            // Handle signup
+           
             createUserWithEmailAndPassword(auth, value.email, value.password)
                 .then((userCredential) => {
                     const user = userCredential.user;
@@ -52,8 +49,8 @@ function Log({ logvisible, setLoggedIn , isLoggedIn }) {
                     setDisableSubmitBtn(false);
                     showNotification("Signup successful");
                     setNotificationType('success');
-                    setLoggedIn(true); // Set isLoggedIn state to true
-                    localStorage.setItem('isLoggedIn', 'true'); // Set isLoggedIn flag in localStorage
+                    setLoggedIn(true); 
+                    localStorage.setItem('isLoggedIn', 'true');  
                     navigate('/men');
                 })
                 .catch((error) => {
@@ -63,13 +60,13 @@ function Log({ logvisible, setLoggedIn , isLoggedIn }) {
                     setNotificationType('error');
                 });
         } else {
-            // Handle login
+            
             signInWithEmailAndPassword(auth, logvalue.email, logvalue.password)
                 .then((userCredential) => {
                     const user = userCredential.user;
                     console.log("Login successful:", user);
-                    setLoggedIn(true); // Set isLoggedIn state to true
-                    localStorage.setItem('isLoggedIn', 'true'); // Set isLoggedIn flag in localStorage
+                    setLoggedIn(true); 
+                    localStorage.setItem('isLoggedIn', 'true'); 
                     navigate('/men');
                 })
                 .catch((error) => {
