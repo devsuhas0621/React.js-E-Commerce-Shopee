@@ -4,7 +4,7 @@
  features such as product browsing, cart management, order processing, and user authentication.
 
 Screenshots
-![Shopee Screenshot 1](SCREENSHOT/poster.jpg)
+![Shopee Screenshot 1](SCREENSHOTS/poster.jpg)
  
  ## Features
 
@@ -19,10 +19,10 @@ Screenshots
 To fully explore and use the shopping cart and checkout features, you'll need to log in or sign up for an account.
 
 ## Tech Stack
-**React.js,
-**HTML/CSS,
-**Firebase,
-**Swiper.js
+- **React.js,
+- **HTML/CSS,
+- **Firebase,
+- **Swiper.js
 
 Contributing
 Contributions are welcome! If you'd like to contribute to this project
