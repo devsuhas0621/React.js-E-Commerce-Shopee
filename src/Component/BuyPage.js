@@ -171,7 +171,7 @@ const continueShopping2=()=>{
                   value={paymentData.expiry}
                   onChange={(e) => setPaymentData({ ...paymentData, expiry: e.target.value })}
                 />
-                <label htmlFor="">ENTER CVV : (000)</label>
+                <label htmlFor="">ENTER CVV : (123)</label>
                 <input
                   type="num"
                   name='cvv'
