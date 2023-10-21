@@ -1,9 +1,11 @@
  # Shopee - Your Fashion Store
  ![Shopee Logo](https://img.icons8.com/3d-fluency/94/shopaholic.png)
- Shopee is a web-based fashion store application built with React.js, offering a wide range of fashion products for your shopping pleasure. This project showcases a fully functional e-commerce platform with 
- features such as product browsing, cart management, order processing, and user authentication.
+ 
+- Shopee is a web-based fashion store application built with React.js, offering a wide range of fashion products for your shopping pleasure. This project showcases 
+  a fully functional e-commerce platform with 
+- features such as product browsing, cart management, order processing, and user authentication.
 
-Screenshots
+## Screenshots
 ![Shopee Screenshot 1](SCREENSHOTS/poster.jpg)
  
  ## Features
