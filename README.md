@@ -4,7 +4,7 @@
  features such as product browsing, cart management, order processing, and user authentication.
 
 Screenshots
-![Shopee Screenshot 1]()
+![Shopee Screenshot 1](SCREENSHOT/poster.jpg)
  
  ## Features
 
@@ -15,18 +15,18 @@ Screenshots
 - **User Authentication:** Securely log in or sign up to access the shopping and checkout features.
 - **Smooth Routing:** Enjoy a smooth and responsive user experience with client-side routing between components.
 
-User Authentication
+## User Authentication
 To fully explore and use the shopping cart and checkout features, you'll need to log in or sign up for an account.
 
-Tech Stack
-React.js
-HTML/CSS
-Firebase
-Swiper.js
+## Tech Stack
+**React.js,
+**HTML/CSS,
+**Firebase,
+**Swiper.js
 
 Contributing
 Contributions are welcome! If you'd like to contribute to this project
 
-Contact
+## Contact
 Email: devsuhas621@gmail.com
 GitHub: devsuhas0621
